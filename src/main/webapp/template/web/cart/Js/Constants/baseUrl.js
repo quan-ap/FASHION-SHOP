@@ -1,0 +1,1 @@
+export const baseURL = "https://5fe2f46f7a94870017682cd8.mockapi.io/products";

@@ -1,0 +1,262 @@
+
+/* Header cart*/
+/*begin block-top*/
+.header-cart {
+    margin-top: 18px;
+  }
+  .header-cart__block-top {
+    display: flex;
+    padding: 0 0 36px 0;
+    width: 100%;
+  }
+  .sticky-top {
+    position: fixed !important;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 26px 86px;
+    transition: all 0.3s ease 0s;
+    border-bottom: 0 solid #4a90e2;
+    background-color: var(--white-color);
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.06);
+  }
+  .header-cart__block-top__lists-menu {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 66.67%;
+  }
+  .header-cart__block-top__lists-menu li {
+    padding: 0 15px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: all 0.3 ease-in-out;
+  }
+  .header-cart__block-top__lists-menu li:hover {
+    color: var(--primary-color);
+  }
+  .header-cart__block-top__wrap-icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+    width: 16.66%;
+  }
+  .btn-search:hover,
+  .btn-profile:hover,
+  .btn-share:hover,
+  .btn-cart:hover,
+  .btn-heart:hover {
+    color: var(--primary-color);
+  }
+  .btn-search,
+  .btn-profile,
+  .btn-share,
+  .btn-cart,
+  .btn-heart {
+    transition: all 0.3s ease-in-out;
+  }
+  .header-cart__block-top__wrap-icon button {
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .header-cart__block-top__wrap-icon a {
+    padding: 0 10px;
+    color: var(--text-color);
+  }
+  .header-cart__block-top__link {
+    width: 16.66%;
+  }
+  
+  /* menu-small */
+  .header-cart__block-top__lists-menu__item {
+    position: relative;
+  }
+  .header-cart__block-top__lists-menu__item::after {
+    content: "";
+    position: absolute;
+    background: transparent;
+    width: 86px;
+    height: 32px;
+    left: 0;
+    top: 100%;
+  }
+  .menu-small {
+    z-index: 8;
+    opacity: 0;
+    visibility: hidden;
+    width: 700px;
+    position: absolute;
+    top: 220%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white-color);
+    box-shadow: 0 1px 7px -2px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    padding: 40px 40px 36px;
+    transform-origin: 0 0;
+    transform: rotateX(90deg);
+    transition: all 0.3s linear;
+  }
+  .header-cart__block-top__lists-menu__item:hover .menu-small {
+    visibility: visible;
+    opacity: 1;
+    transform: rotateX(0);
+  }
+  
+  .menu-small__item__list {
+    margin-top: 12px;
+  }
+  .menu-small__item__list li {
+    transition: all 0.3s linear;
+    padding: 0;
+  }
+  .menu-small__item__list__item:hover {
+    transform: translateX(8px);
+  }
+  .menu-small__item__list__item__link {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    line-height: 32px;
+  }
+  .menu-small__item__list__item:hover .menu-small__item__list__item__link {
+    color: var(--primary-color);
+  }
+  .menu-small__item__link {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    transition: all 0.3s linear;
+  }
+  .menu-small__item__link:hover {
+    color: var(--primary-color);
+  }
+  
+  .header-cart__block-top__lists-menu__item:nth-child(2) > .menu-small {
+    width: 700px;
+  }
+  
+  .header-cart__block-top__lists-menu__item:nth-child(4) > .menu-small {
+    width: 210px;
+    padding: 0 0 18px 0;
+  }
+  .header-cart__block-top__lists-menu__item:nth-child(5) > .menu-small {
+    width: 210px;
+    padding: 0 0 18px 0;
+  }
+  /* end menu-small */
+  
+  /* Search bar */
+  .form-group {
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 76px;
+    padding: 15px;
+    border-radius: 3px;
+    background-color: var(--white-color);
+    position: absolute;
+    top: 243%;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateX(90deg);
+    transform-origin: 0 0;
+    transition: all 0.3s ease-in-out;
+  }
+  .form-group-active {
+    opacity: 1;
+    visibility: visible;
+    transform: rotateX(0);
+  }
+  .form-group input {
+    font-size: 1.4rem;
+    padding: 12px 20px;
+    flex: 1;
+    border: 1px solid #d3d3d3;
+    outline: none;
+  }
+  .form-group button {
+    height: 100%;
+    background-color: var(--primary-color);
+    font-size: 20px;
+    padding: 0px 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  .button-search-small i {
+    color: var(--white-color);
+  }
+  .button-search-small:hover {
+    background-color: var(--black-color);
+  }
+  .header-cart__block-top__wrap-icon__search {
+    position: relative;
+  }
+  /* end Search bar */
+  
+  /* menu-profile */
+  .header-cart__block-top__wrap-icon__profile {
+    position: relative;
+    z-index: 5;
+  }
+  .header-cart__block-top__wrap-icon__profile > .menu-small {
+    top: 243%;
+    left: 0;
+    width: 125px;
+    padding: 0 0 18px 0;
+  }
+  .header-cart__block-top__wrap-icon__profile::after {
+    content: "";
+    position: absolute;
+    background: transparent;
+    width: 86px;
+    height: 36px;
+    left: 0;
+    top: 100%;
+  }
+  .header-cart__block-top__wrap-icon__profile:hover > .menu-small {
+    opacity: 1;
+    visibility: visible;
+    transform: rotate(0);
+  }
+  
+  /* end menu-profile */
+  /*End block-top*/
+  
+  /*begin block-lower*/
+  .header-cart__block-lower {
+    height: 94px;
+    width: 100%;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-cart__block-lower a {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    padding: 0 20px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+  }
+  .header-cart__block-lower a:hover {
+    color: var(--primary-color);
+  }
+  .header-cart__block-lower span {
+    color: var(--text-color);
+    font-size: 1.6rem;
+  }
+  /*End block-lower*/
+  
+  /*End header cart*/
